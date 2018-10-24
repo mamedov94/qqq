@@ -1,0 +1,421 @@
+@import "global";
+
+// Header
+
+.header {
+	position: relative;
+	background: url(../img/bg/first-bg.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	padding-bottom: 32px;
+	&__inner {
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+	}
+}
+
+.scrl-dwn {
+	position: absolute;
+	bottom: 32px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: @ptsans-font;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	line-height: 25px;
+	//margin-top: 135px;
+	& i {
+		margin-top: 5px;
+	}
+}
+
+.logo {
+	& a {
+		font-family: @ptserif-font;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 24px;
+		color: @accent-color;
+	}
+}
+.navbar {
+	padding-top: 42px;
+}
+.navbar-nav {
+	& a {
+		font-family: @ptserif-font;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 1.05px;
+		text-transform: uppercase;
+		color: @menu-color;
+		margin-right: 90px;
+
+		&:hover {
+			color: @accent-color;
+		}
+	}
+	& li:nth-of-type(4) a {
+		margin-right: 35px;
+	}
+	& li:nth-of-type(5) a {
+		margin-right: 35px;
+		color: @accent-color;
+	}
+}
+
+// Header content
+
+.header-content {
+	text-align: center;
+	margin-top: 210px;
+
+	& h1 {
+		font-family: @ptserif-font;
+		font-size: 52px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 50px;
+		color: #fff;
+	}
+	& p {
+		font-family: @ptserif-font;
+		font-size: 36px;
+		line-height: 50px;
+		color: #fff;
+		& span {
+			text-decoration: underline;
+		}
+	}
+	.header-btns {
+		margin-top: 45px;
+		.btn {
+			margin: 5px 10px;
+		}
+	}
+}
+
+// About
+
+.about-rest {
+	background-color: @grey-color;
+	padding: 120px 0;
+}
+
+.about {
+	margin-top: 60px;
+	position: relative;
+	.text {
+		margin-top: 35px;
+		padding: 0 12px;
+	}
+	.text:last-of-type {
+		margin-top: 10px;
+		margin-bottom: 35px;
+	}
+	& div {
+		display: flex;
+		justify-content: flex-end;
+		padding: 0 25px;
+	}
+	&__img {
+		position: absolute;
+	}
+	&__content {
+		display: flex;
+		align-items: flex-end;
+		margin-top: 52px;
+		& img {
+			margin-right: 28px;
+		}
+		& img:nth-of-type(3) {
+			margin-right: 0;
+		}
+	}
+}
+
+// Taste
+
+.taste {
+	padding: 120px 0;
+	background-color: #fff;
+
+	&__img {
+		& div {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+			& img:last-of-type {
+				margin-left: 30px;
+			}
+		}
+	}
+	&__text {
+		margin-top: 67px;
+		.text {
+			margin-top: 38px;
+			margin-left: 18px;
+		}
+		.text:last-of-type {
+			margin-top: 10px;
+			margin-bottom: 44px;
+		}
+		& div {
+			display: flex;
+			justify-content: flex-end;
+			padding: 0 20px;
+		}
+	}
+}
+
+// Reservation and Events
+
+.reserv-event {
+	background: @grey-color;
+	padding: 120px 0;
+
+	.title {
+		font-size: 22px;
+		padding-bottom: 41px;
+	}
+}
+
+// Reserv
+
+.reserv-block {
+	padding-left: 65px;
+	padding-right: 65px;
+	& input {
+		width: 100%;
+		height: 53px;
+		background-color: @grey-color;
+		border: 1px solid #e4e4e4;
+		border-radius: 4px;
+		padding: 15px 20px 15px 20px;
+		margin-bottom: 17px;
+	}
+	& input::placeholder {
+		font-family: @lato-font;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.7px;
+		color: #555555;
+	}
+	.btn {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	.name {
+		background: url(../img/icons/user-icon.svg) @pos;
+	}
+	.date {
+		background: url(../img/icons/date-icon.svg) @pos;
+	}
+	.time {
+		background: url(../img/icons/time-icon.svg) @pos;
+	}
+	.commensals {
+		background: url(../img/icons/commensals-icon.svg) @pos;
+	}
+}
+
+// Events
+
+.events {
+
+
+	&__item {
+		display: flex;
+		margin-bottom: 34px;
+	}
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+	}
+	&__title {
+		font-family: @ptsans-font;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 14px;
+		color: @accent-color;
+		margin-bottom: 3px;
+	}
+	&__date {
+		& span {
+			font-family: @ptsans-font;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 20px;
+			color: @date-color;
+		}
+		& span:last-of-type {
+			margin-left: 5px;
+		}
+		& svg {
+			margin-right: 5px;
+		}
+	}
+	&__text {
+		font-family: @ptsans-font;
+		font-size: 14px;
+		line-height: 20px;
+		max-width: 282px;
+		color: @date-color;
+		margin-top: 10px;
+	}
+	.read-more {
+		font-family: @ptsans-font;
+		font-size: 14px;
+		font-style: italic;
+		line-height: 20px;
+		color: @accent-color;
+	}
+}
+
+// Order
+
+.order {
+	padding: 120px 0;
+	background: #fff;
+}
+
+.or {
+	position: relative;
+	& span {
+		position: absolute;
+		font-family: @lato-font;
+		font-size: 24px;
+		line-height: 24px;
+		color: #9a9999;
+		top: 35%;
+		left: 50%;
+		background: #fff;
+		padding: 15px 0;
+	}
+	&:before {
+		position: absolute;
+		left: 15px;
+		content: '';
+		height: 190px;
+		width: 1px;
+		background: #9a9999;
+		opacity: 0.4;
+	}
+}
+
+// Book a table
+
+.book-a-table {
+	.text {
+		display: block;
+		max-width: 282px;
+		margin: 31px auto;
+		text-align: center;
+	}
+	.btn {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+// Tell friends
+
+.tell-friends {
+	.text {
+		display: block;
+		max-width: 294px;
+		text-align: center;
+		margin: 29px auto 22px;
+	}
+	.social-btns {
+		text-align: center;
+		.soc-btn {
+			font-family: @mr-font;
+			font-size: 12px;
+			line-height: 20px;
+			letter-spacing: 0.55px;
+			color: #fff;
+			width: 64px;
+			height: 23px;
+			border-radius: 3px;
+			border: none;
+			margin: 0 3px;
+			& i {
+				margin-right: 3px;
+			}
+		}
+		.fb {
+			background-color: #3e59a5;
+		}
+		.tw {
+			background-color: #1b95e0;
+		}
+	}
+}
+
+// Footer
+
+.footer {
+	padding: 60px 0;
+	background-color: @black-color;
+	&__logo {
+		& a {
+			font-family: @ptserif-font;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 24px;
+			color: @accent-color;
+		}
+	}
+	&__title {
+		font-family: @ptserif-font;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		line-height: 24px;
+		color: @menu-color;
+		margin-bottom: 19px;
+	}
+	&__menu {
+		& a {
+			font-family: @ptsans-font;
+			font-size: 13px;
+			line-height: 26px;
+			text-transform: uppercase;
+			letter-spacing: 0.97px;
+			color: @menu-color;
+		}
+	}
+}
+.visit-us {
+	& p {
+		font-family: @ptsans-font;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 1.05px;
+		color: #fff;
+	}
+}
+.connect-us {
+	margin-top: 18px;
+
+	.socials {
+		display: flex;
+		& li {
+			margin-right: 28px;
+		}
+		& i {
+			font-size: 16px;
+			color: #fff;
+			&:hover {
+				color: @accent-color;
+			}
+		}
+	}
+}
+

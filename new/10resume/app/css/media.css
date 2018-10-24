@@ -1,0 +1,105 @@
+@media screen and (max-width: 425px) {
+  body {
+    margin: 0 !important;
+  }
+  .main-container {
+    padding: 55px 10px 20px 10px !important;
+  }
+  .wrapper {
+    padding: 0;
+  }
+  .experience-item .title {
+    text-align: center;
+  }
+  .experience-item__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experience-item__position {
+    margin-top: 20px;
+  }
+  .experience-item .experience-skills {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skills-section__skills {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .skills-section__skills .title {
+    text-align: center;
+  }
+  .skills-list:nth-child(2) .title {
+    margin-top: 25px;
+  }
+  .extra-skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .extra-skills .column {
+    max-width: 100% !important;
+  }
+  .education__name {
+    margin-bottom: 25px;
+  }
+  .education__proff {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aside,
+  .main {
+    max-width: 100%;
+  }
+  .page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .main-container {
+    padding: 55px 50px 20px 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 10px 0;
+  }
+  .main-container {
+    padding: 55px 65px 20px 65px;
+  }
+  .skills-section__skills {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .skills-section__skills .title {
+    text-align: center;
+  }
+  .skills-list:nth-child(2) .title {
+    margin-top: 25px;
+  }
+  .portfolio-section__items {
+    -webkit-justify-content: space-around !important;
+        -ms-flex-pack: distribute !important;
+            justify-content: space-around !important;
+  }
+}

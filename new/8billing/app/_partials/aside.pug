@@ -1,0 +1,24 @@
+aside.aside-bill
+	div.additional-lic
+		div.additional-lic__title
+			p.aside-title Additional licenses
+		div.summary
+			div.summary__quant.item
+				p Summary:
+				p
+					input.licenses-count(type="text" value="3" maxlength="4" disabled) 
+					span licenses
+			div.summary__calc.right
+				p x $5.99/mo
+				p x 
+					span.days 180 #[span days] 
+					span.date (till 15 Sep 2014)
+	div.total
+		div.total__title
+			p Total:
+		div.total__summ
+			span.total-summ#total-summ 240
+			span.discount 30
+			span.add-coupon I have a coupone
+			input.coupon-input(type="text" placeholder="Coupon code")
+			button#checkout.btn Proceed to Checkout

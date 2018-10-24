@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Keywords -->
+	<meta name="keywords" content="">
+	<!-- Short description -->
+	<meta name="description" content="">
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+	<title>Title</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- Icon -->
+	<link rel="shortcut icon" href="" type="image/png">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="top-menu">
+			<div class="container">
+				<div class="top-menu__inner">
+					<div class="currency">
+						<span>Currency :</span>
+						<select id="currency">
+							<option>gbp</option>
+							<option>usd</option>
+							<option>rub</option>
+						</select>
+					</div>
+					<ul class="login ml-auto">
+						<li><a href="sign-up.html">Register</a></li>
+						<li><a href="sign-up.html">Sign In</a></li>
+					</ul>
+					<a id="cart">
+						<span><i class="fa fa-shopping-cart" aria-hidden="true"></i>empty<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__inner">
+			<div class="container cont-wide">
+				<div class="main-menu">
+					<div class="main-menu__top">
+						<div class="logo">
+							<a href="#"><span>avenue</span> fashion</a>
+						</div>
+						<nav class="menu ml-auto">
+							<ul>
+								<li class="menu__item"><a href="#">mens<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<ul class="menu__inner">
+										<ul class="left-menu">
+											<li class="menu__inner-title">casuals</li>
+											<li><a href="#">Jackets</a></li>
+											<li><a href="#">Hoodies & Sweatshirts</a></li>
+											<li><a href="#">Polo Shirts</a></li>
+											<li><a href="#">Sportswear</a></li>
+											<li><a href="#">Trousers & Chinos</a></li>
+											<li><a href="#">T-Shirts</a></li>
+										</ul>
+										<ul class="right-menu">
+											<li class="menu__inner-title">Formal</li>
+											<li><a href="#">Jackets</a></li>
+											<li><a href="#">Shirts</a></li>
+											<li><a href="#">Suits</a></li>
+											<li><a href="#">Trousers</a></li>
+										</ul>
+										<a href="#" class="menu__inner-banner">
+											<h3><span>Autumn sale!</span><br>up to 50% off</h3>
+										</a>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="#">womens<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<ul class="menu__inner">
+										<ul class="left-menu">
+											<li class="menu__inner-title">casuals</li>
+											<li><a href="#">Jackets</a></li>
+											<li><a href="#">Hoodies & Sweatshirts</a></li>
+											<li><a href="#">Polo Shirts</a></li>
+											<li><a href="#">Sportswear</a></li>
+											<li><a href="#">Trousers & Chinos</a></li>
+											<li><a href="#">T-Shirts</a></li>
+										</ul>
+										<ul class="right-menu">
+											<li class="menu__inner-title">Formal</li>
+											<li><a href="#">Jackets</a></li>
+											<li><a href="#">Shirts</a></li>
+											<li><a href="#">Suits</a></li>
+											<li><a href="#">Trousers</a></li>
+										</ul>
+										<a href="#" class="menu__inner-banner">
+											<h3><span>Autumn sale!</span><br>up to 50% off</h3>
+										</a>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="brand.html">the brand</a></li>
+								<li class="menu__item"><a href="local-stores.html">local stores</a></li>
+								<li class="menu__item"><a href="lookbook.html">look book</a></li>
+							</ul>
+						</nav>
+						<div class="search">
+							<form>
+								<input type="search" placeholder="Search" autocomplete>
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</form>
+						</div>
+					</div>
+					<div class="header-content">
+						<div class="header-content__list">
+							<div class="content">
+								<img src="img/bg/first-bg.png" alt="first-bg">
+								<span class="content__title">a v e</span>
+								<a href="product-view.html" class="content__btn btn">shop men’s collection</a>
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="items">
+		<div class="container cont-wide">
+			<ul class="items__filters">
+				<li><a href="#">popular</a></li>
+				<li><a href="#">new arrivals</a></li>
+				<li><a href="#">best sellers</a></li>
+				<li><a href="#">special offers</a></li>
+				<li><a href="#">coming soon</a></li>
+			</ul>
+			<div class="cards">
+				<div class="column">
+					<div class="col-6 zi-3">
+						<div class="card">
+							<div class="card__img">
+								<a href="#">
+									<span class="price"><sup id="currency">£</sup><span>89.99</span></span>
+									<img src="img/cards/card-1.jpg" alt="card-1">
+								</a>
+							</div>
+							<div class="card__info">
+								<h2 class="subtitle">Womens burnt orange casual tee <sup>£</sup>29.95</h2>
+								<p class="text">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+								<div class="card__links">
+									<a href="#" class="card__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+									<a href="#" class="card__link"><i class="far fa-heart"></i></a>
+									<a href="#" class="card__link"><i class="fa fa-compress" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 zi-3">
+						<div class="card">
+							<div class="card__img">
+								<a href="#">
+									<span class="price"><sup id="currency">£</sup><span>47.50</span></span>
+									<img src="img/cards/card-2.jpg" alt="card-2">
+								</a>
+							</div>
+							<div class="card__info">
+								<h2 class="subtitle">Womens burnt orange casual tee <sup>£</sup>29.95</h2>
+								<p class="text">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+								<div class="card__links">
+									<a href="#" class="card__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+									<a href="#" class="card__link"><i class="far fa-heart"></i></a>
+									<a href="#" class="card__link"><i class="fa fa-compress" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 zi-2">
+						<div class="card">
+							<div class="card__img">
+								<a href="product-view.html">
+									<span class="price">
+										<sup id="currency">£</sup><span class="old-price">107</span>
+										<sup id="currency">£</sup><span>89.99</span>
+									</span>
+									<img src="img/cards/card-4.jpg" alt="card-4">
+								</a>
+							</div>
+							<div class="card__info">
+								<h2 class="subtitle">Womens burnt orange casual tee <sup>£</sup>29.95</h2>
+								<p class="text">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+								<div class="card__links">
+									<a href="#" class="card__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+									<a href="#" class="card__link"><i class="far fa-heart"></i></a>
+									<a href="#" class="card__link"><i class="fa fa-compress" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="col-12 zi-3">
+						<div class="card">
+							<div class="card__img">
+								<a href="#">
+									<span class="price"><sup id="currency">£</sup><span>69.95</span></span>
+									<img src="img/cards/card-3.jpg" alt="card-3">
+								</a>
+							</div>
+							<div class="card__info">
+								<h2 class="subtitle">Womens burnt orange casual tee <sup>£</sup>29.95</h2>
+								<p class="text">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+								<div class="card__links">
+									<a href="#" class="card__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+									<a href="#" class="card__link"><i class="far fa-heart"></i></a>
+									<a href="#" class="card__link"><i class="fa fa-compress" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 zi-2">
+						<div class="card">
+							<div class="card__img">
+								<a href="#">
+									<span class="price"><sup id="currency">£</sup><span>29.95</span></span>
+									<img class="big-image" src="img/cards/card-5.jpg" alt="card-5">
+								</a>
+								<div class="mini-images">
+									<a href="#" class="mini-image"><img src="img/cards/card-5-thumb-front.jpg" alt="card-5-thumb-front"></a>
+									<a href="#" class="mini-image"><img src="img/cards/card-5-thumb-back.jpg" alt="card-5-thumb-back"></a>
+								</div>
+							</div>
+							<div class="card__info">
+								<h2 class="subtitle">Womens burnt orange casual tee <sup>£</sup>29.95</h2>
+								<p class="text">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+								<div class="card__links">
+									<a href="#" class="card__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+									<a href="#" class="card__link"><i class="far fa-heart"></i></a>
+									<a href="#" class="card__link"><i class="fa fa-compress" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 zi-2">
+						<div class="card">
+							<div class="card__img">
+								<a href="#">
+									<span class="price"><sup id="currency">£</sup><span>34.79</span></span>
+									<img src="img/cards/card-6.jpg" alt="card-6">
+								</a>
+							</div>
+							<div class="card__info">
+								<h2 class="subtitle">Womens burnt orange casual tee <sup>£</sup>29.95</h2>
+								<p class="text">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+								<div class="card__links">
+									<a href="#" class="card__link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+									<a href="#" class="card__link"><i class="far fa-heart"></i></a>
+									<a href="#" class="card__link"><i class="fa fa-compress" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="lookbook">
+		<div class="container w-100">
+			<div class="lookbook__inner">
+				<div class="look men-look">
+					<img src="img/lookbook/men.png" alt="men">
+					<div class="look-text">
+						<h2><span>men’s</span><br>lookbook</h2>
+						<p>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
+						<a href="lookbook.html" class="btn">view now</a>
+					</div>
+				</div>
+				<div class="look women-look">
+					<img src="img/lookbook/women.png" alt="women">
+					<div class="look-text">
+						<h2><span>women’s</span><br>lookbook</h2>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</p>
+						<a href="lookbook.html" class="btn">view now</a>
+					</div>
+				</div>
+				<div class="look your-look">
+					<img src="img/lookbook/photo_silhouette.png" alt="silhouette">
+					<div class="look-text">
+						<h2><span>your</span><br>lookbook</h2>
+						<p>See an item you like and click the  button to add it to your lookbook where you can create your own perfect look. It’s like your own boutique!</p>
+						<a href="lookbook.html" class="btn">view now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<ul class="first-col">
+					<li class="footer-title">Information</li>
+					<li class="footer-items"><a href="#">The brand</a></li>
+					<li class="footer-items"><a href="#">Local stores</a></li>
+					<li class="footer-items"><a href="#">Customer service</a></li>
+					<li class="footer-items"><a href="#">Privacy & cookies</a></li>
+					<li class="footer-items"><a href="#">Site map</a></li>
+				</ul>
+				<ul class="second-col">
+					<li class="footer-title">Why buy from us</li>
+					<li class="footer-items"><a href="#">Shipping & returns</a></li>
+					<li class="footer-items"><a href="#">Secure shopping</a></li>
+					<li class="footer-items"><a href="#">Testimonials</a></li>
+					<li class="footer-items"><a href="#">Award winning</a></li>
+					<li class="footer-items"><a href="#">Ethical trading</a></li>
+				</ul>
+				<ul class="third-col">
+					<li class="footer-title">Your account</li>
+					<li class="footer-items"><a href="#">Sign in</a></li>
+					<li class="footer-items"><a href="#">Register</a></li>
+					<li class="footer-items"><a href="#">View cart</a></li>
+					<li class="footer-items"><a href="#">View your lookbook</a></li>
+					<li class="footer-items"><a href="#">Track an order</a></li>
+					<li class="footer-items"><a href="#">Update information</a></li>
+				</ul>
+				<ul class="fourth-col">
+					<li class="footer-title">Lookbook</li>
+					<li class="footer-items"><a href="#">Latest posts</a></li>
+					<li class="footer-items"><a href="#">Men’s lookbook</a></li>
+					<li class="footer-items"><a href="#">Women’s lookbook</a></li>
+					<li class="footer-items"><a href="#">Lookbooks RSS feed</a></li>
+					<li class="footer-items"><a href="#">View your lookbook</a></li>
+					<li class="footer-items"><a href="#">Delete your lookbook</a></li>
+				</ul>
+				<ul class="fifth-col">
+					<li class="footer-title">contact details</li>
+					<li class="footer-items">Head Office: Avenue Fashion,<br>180-182 Regent Street, London.</li>
+					<li class="footer-items">Telephone: 0123-456-789</li>
+					<li class="footer-items">Email: <a href="#">support@yourwebsite.com</a></li>
+				</ul>
+			</div>
+			<div class="banners">
+				<div class="left-banner">
+					<h3><span>award winner</span><br>fashion awards 2016</h3>
+				</div>
+				<div class="right-banner">
+					<ul class="socials">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="padding-bottom w-100">
+			<div class="container">
+				<ul class="copyright">
+					<li class="year">© 2016 Avenue Fashion™</li>
+					<li class="design-by ml-auto">Design by RobbyDesigns.com</li>
+					<li class="dev-by">Dev by Loremipsum.com</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<div id="btn-to-top">
+		<span class="symbol-btn-to-top">
+			<i class="fas fa-angle-double-up"></i>
+		</span>
+	</div>
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+main.main-card
+	div.licenses
+		p.licenses__used #[span 55 of 53] licenses used
+		p.licenses__date Active till 15 Sept 2014
+
+	div.buy-licenses
+		div.buy-licenses__title
+			p.title Buy more licenses:
+		div.buy-licenses__price
+			div.minus-btn
+				button.sm-btn#minus-btn
+					img(src="img/icons/minus.svg")
+			span.buy-licenses__counter
+				input.licenses-count#buy-licenses__count(type="text" value="3" maxlength="4" size="1" min="3" autocomplete="off")
+			div.plus-btn
+				button.sm-btn#plus-btn
+					img(src="img/icons/plus.svg")
+			span.multiply
+				include ../_partials/icons/multiply-icon
+			span.price 5.99
+		div.buy-licenses__more
+			p Buy 2 more licenses and save $10
+
+	div.extend
+		div.extend__title
+			p.title Extend subscription:
+		div.extend-range
+			div.range-cursor
+			div.extend-range__inner
+				div.range-item.active
+					div.range-item__top-text
+						span.licenses-month(data-month="6") 6 months
+					div.range-item__bottom-text
+						span.disc 30
+						span.extend-price 240
+				div.range-item
+					div.range-item__top-text
+						span.licenses-month(data-month="9") 9 months
+					div.range-item__bottom-text
+						span.disc 45
+						span.extend-price 360
+				div.range-item
+					div.range-item__top-text
+						span.licenses-month(data-month="12") 1 year
+					div.range-item__bottom-text
+						span.disc 75
+						span.extend-price 465
+				div.range-item
+					div.range-item__top-text
+						span.licenses-month(data-month="24") 2 years
+					div.range-item__bottom-text
+						span.disc 120
+						span.extend-price 960

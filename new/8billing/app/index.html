@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>test</title>
+    <link rel="shortcut icon" href="" type="image/png"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <header class="header">
+          <div class="menu">
+            <button class="toggler-btn"><span></span></button><span class="shop">Магазин</span>
+          </div>
+          <div class="switcher"><span class="switcher__text">Reccurement payment</span>
+            <div class="switcher__btn">
+              <input class="custom-switcher" id="switcher" type="checkbox"/>
+              <label class="custom-switcher-label" for="switcher"></label>
+            </div>
+          </div>
+        </header>
+        <div class="store">
+          <div class="modal-payment"><span class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="13" viewBox="0 0 12 13"><defs><path id="kgdja" d="M752.26 136.67l1.48-1.34L758 140l4.26-4.68 1.48 1.34-4.39 4.83 4.39 4.83-1.48 1.34L758 143l-4.26 4.68-1.48-1.34 4.39-4.83-4.39-4.83"/></defs><g><g transform="translate(-752 -135)"><use fill="#d5d1d1" xlink:href="#kgdja"/></g></g></svg></span>
+            <div class="card-details">
+              <div class="card-details__title">
+                <h2 class="title">Credit Card Details:</h2>
+              </div>
+              <div class="card-details__choice-card">
+                <div class="old-card">
+                  <input class="custom-rad" id="own-card" type="radio" name="card" checked="checked"/>
+                  <label class="custom-rad-label" for="own-card"></label><span>MC ****9668</span>
+                </div>
+                <div class="new-card">
+                  <input class="custom-rad" id="new-card" type="radio" name="card"/>
+                  <label class="custom-rad-label" for="new-card"></label><span>New card</span>
+                  <div class="save-card">
+                    <input class="custom-check" id="save" type="checkbox" name="save-card"/>
+                    <label class="custom-check-label" for="save">Save</label>
+                  </div>
+                </div>
+              </div>
+              <form class="card-details__personal-info">
+                <input class="card-number" type="text" maxlength="23" placeholder="Number" autocomplete="off"/>
+                <input class="card-name" type="text" placeholder="Name on card" autocomplete="off"/>
+                <div class="back-card-side">
+                  <input class="card-month" type="text" maxlength="2" placeholder="MM" autocomplete="off"/>
+                  <input class="card-year" type="text" maxlength="2" placeholder="YY" autocomplete="off"/>
+                  <input class="card-svv" type="text" maxlength="3" placeholder="CVV" autocomplete="off"/><span class="svv-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="29" viewBox="0 0 45 29"><defs><path id="bsfsa" d="M473.5 439a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15z"/><path id="bsfsb" d="M438 432c0-1.1.9-2 2-2h17.52l2.98-2.98 2.98 2.98H481a2 2 0 0 1 2 2v3h-45zm45 22a2 2 0 0 1-2 2h-41a2 2 0 0 1-2-2v-13h45z"/><path id="bsfsc" d="M441 449v-5h39v5z"/><clipPath id="bsfsd"><use fill="#fff" xlink:href="#bsfsa"/></clipPath></defs><g><g transform="translate(-438 -427)"><g><use fill="#158fd2" xlink:href="#bsfsb"/></g><g><use fill="#fff" xlink:href="#bsfsc"/></g><g/><g><use fill="#fff" fill-opacity="0" stroke="#f37575" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#bsfsd&quot;)" xlink:href="#bsfsa"/></g></g></g></svg></span>
+                </div>
+              </form>
+              <div class="reccurement-pay">
+                <input class="custom-check" id="reccure" type="checkbox" name="reccure"/>
+                <label class="custom-check-label" for="reccure">Do a reccurement payment</label>
+              </div>
+              <button class="btn">Checkout</button>
+              <button class="white-btn">or <span>Pay with </span><img src="img/icons/paypal.svg" alt="paypal"/></button>
+            </div>
+            <div class="payment-summ">
+              <div class="payment-summ__total">
+                <div class="payment-title"><span>Total:</span></div>
+                <div class="payment-total-summ"><span class="total-summ">240</span></div>
+                <div class="payment-discount"><span class="discount">30</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-overlay"></div>
+          <main class="main-card">
+            <div class="licenses">
+              <p class="licenses__used"><span>55 of 53</span> licenses used</p>
+              <p class="licenses__date">Active till 15 Sept 2014</p>
+            </div>
+            <div class="buy-licenses">
+              <div class="buy-licenses__title">
+                <p class="title">Buy more licenses:</p>
+              </div>
+              <div class="buy-licenses__price">
+                <div class="minus-btn">
+                  <button class="sm-btn" id="minus-btn"><img src="img/icons/minus.svg"/></button>
+                </div><span class="buy-licenses__counter">
+                  <input class="licenses-count" id="buy-licenses__count" type="text" value="3" maxlength="4" size="1" min="3" autocomplete="off"/></span>
+                <div class="plus-btn">
+                  <button class="sm-btn" id="plus-btn"><img src="img/icons/plus.svg"/></button>
+                </div><span class="multiply"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.112 31.112" style="enable-background:new 0 0 31.112 31.112;" xml:space="preserve">
+<polygon points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97   29.698,31.112 31.112,29.698 16.97,15.556 "/><g></g></svg></span><span class="price">5.99</span>
+              </div>
+              <div class="buy-licenses__more">
+                <p>Buy 2 more licenses and save $10</p>
+              </div>
+            </div>
+            <div class="extend">
+              <div class="extend__title">
+                <p class="title">Extend subscription:</p>
+              </div>
+              <div class="extend-range">
+                <div class="range-cursor"></div>
+                <div class="extend-range__inner">
+                  <div class="range-item active">
+                    <div class="range-item__top-text"><span class="licenses-month" data-month="6">6 months</span></div>
+                    <div class="range-item__bottom-text"><span class="disc">30</span><span class="extend-price">240</span></div>
+                  </div>
+                  <div class="range-item">
+                    <div class="range-item__top-text"><span class="licenses-month" data-month="9">9 months</span></div>
+                    <div class="range-item__bottom-text"><span class="disc">45</span><span class="extend-price">360</span></div>
+                  </div>
+                  <div class="range-item">
+                    <div class="range-item__top-text"><span class="licenses-month" data-month="12">1 year</span></div>
+                    <div class="range-item__bottom-text"><span class="disc">75</span><span class="extend-price">465</span></div>
+                  </div>
+                  <div class="range-item">
+                    <div class="range-item__top-text"><span class="licenses-month" data-month="24">2 years</span></div>
+                    <div class="range-item__bottom-text"><span class="disc">120</span><span class="extend-price">960</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <aside class="aside-bill">
+            <div class="additional-lic">
+              <div class="additional-lic__title">
+                <p class="aside-title">Additional licenses</p>
+              </div>
+              <div class="summary">
+                <div class="summary__quant item">
+                  <p>Summary:</p>
+                  <p>
+                    <input class="licenses-count" type="text" value="3" maxlength="4" disabled="disabled"/><span>licenses</span>
+                  </p>
+                </div>
+                <div class="summary__calc right">
+                  <p>x $5.99/mo</p>
+                  <p>x <span class="days">180 <span>days</span> </span><span class="date">(till 15 Sep 2014)</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="total">
+              <div class="total__title">
+                <p>Total:</p>
+              </div>
+              <div class="total__summ"><span class="total-summ" id="total-summ">240</span><span class="discount">30</span><span class="add-coupon">I have a coupone</span>
+                <input class="coupon-input" type="text" placeholder="Coupon code"/>
+                <button class="btn" id="checkout">Proceed to Checkout</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+@media screen and (max-width: 425px) {
+	body {
+		margin: 0 !important;
+	}
+	.main-container {
+		padding: 55px 10px 20px 10px !important;
+	}
+	.wrapper {
+		padding: 0;
+	}
+	.experience-item {
+		.title {
+			text-align: center;
+		}
+		&__title {
+			flex-direction: column;
+		}
+		&__position {
+			margin-top: 20px;
+		}
+		.experience-skills {
+			justify-content: center;
+		}
+	}
+	.skills-section__skills {
+		justify-content: center !important;
+		.title {
+			text-align: center;
+		}
+	}
+	.skills-list:nth-child(2) .title {
+		margin-top: 25px;
+	}
+	.extra-skills {
+		flex-direction: column;
+		align-items: center;
+		.column {
+			max-width: 100% !important;
+		}
+	}
+	.education {
+		&__name {
+			margin-bottom: 25px;
+		}
+		&__proff {
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.aside,
+	.main {
+		max-width: 100%;
+	}
+	.page {
+		flex-direction: column;
+		box-shadow: none;
+	}
+	.main-container {
+		padding: 55px 50px 20px 50px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		margin: 10px 0;
+	}
+	.main-container {
+		padding: 55px 65px 20px 65px;
+	}
+	.skills-section__skills {
+		justify-content: center !important;
+		.title {
+			text-align: center;
+		}
+	}
+	.skills-list:nth-child(2) .title {
+		margin-top: 25px;
+	}
+	.portfolio-section__items {
+		justify-content: space-around !important;
+	}
+}

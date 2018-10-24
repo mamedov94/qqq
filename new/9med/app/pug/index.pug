@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en-EN")
+	head
+		meta(charset="UTF-8")
+		//- Keywords
+		meta(name="keywords" content="")
+		//- Description
+		meta(name="description" content="")
+		//- Mobile
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		//- Title
+		title test
+		//- Icon
+		link(rel="shortcut icon" href="" type="image/png")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
+		//- Style CSS
+		link(rel="stylesheet" href="css/main.css")
+	body
+		div.app
+			div.container
+				include ../_partials/top-menu
+			include ../_partials/header
+			div.container
+				div.product-reviews
+					span.product-review Product Reviews
+					span.product-title Article
+				main.main
+					include ../_partials/main
+					include ../_partials/aside
+				include ../_partials/all-about
+				include ../_partials/interest
+			include ../_partials/footer
+				
+		script(src="js/libs.min.js")
+		script(src="js/main.js")

@@ -1,0 +1,257 @@
+@import "colors";
+@import "fonts";
+@import "main";
+
+
+@menu-font-size: 13px;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: @mont-font;
+	margin: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @mont-font;
+	margin: 0;
+	padding: 0;
+}
+
+span, a, p {
+	font-family: @mont-font;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/* Title */
+
+.container {
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.cont-wide {
+	max-width: 1770px;
+}
+
+.cont-normal {
+	max-width: 1210px;
+}
+
+.w-100 {max-width: 100%;}
+.ml-auto {margin-left: auto;}
+.mr-auto {margin-right: auto;}
+.accent {color: @accent-color;}
+.bold {font-weight: 700;}
+.zi-2 {z-index: 2;}
+.zi-3 {z-index: 3;}
+.active {color: @accent-color !important;}
+#currency {font-size: 15px;}
+
+.price {
+	color: #9a9a9a;
+	font-size: 21px;
+	letter-spacing: 1.05px;
+	text-transform: uppercase;
+}
+
+.product-price {
+	font-size: 30px;
+	letter-spacing: 1.5px;
+	color: #9a9a9a;
+}
+
+.title {
+	font-size: 48px;
+	line-height: 54px;
+	text-transform: uppercase;
+	line-height: 2.4px;
+	color: @title-color;
+}
+
+.medium-title {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: @title-color;
+}
+
+#btn-to-top {
+	position: fixed;
+	padding: 12px 17px;
+	bottom: 30px;
+	right: 30px;
+	background-color: #f8f8f8;
+	opacity: 0.45;
+	cursor: pointer;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.14);
+	z-index: 500;
+	border-radius: 4px;
+
+	&:hover{
+		color: #fff;
+		transition: 0.4s;
+		background: @accent-color;
+	}
+}
+
+.subtitle {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: @subtitle-color;
+}
+
+.text {
+	font-family: @robo-font;
+	font-size: 15px;
+	line-height: 22px;
+	color: @text-color;
+}
+
+.btn {
+	display: inline-block;
+	border: 2px solid #737373;
+	background: none;
+	outline: none;
+	font-size: 16px;
+	color: @btn-txt-color;
+	text-transform: uppercase;
+	letter-spacing: 3.2px;
+	padding: 23px 33px;
+	cursor: pointer;
+	transition: 0.2s;
+	&:hover {
+		background: @accent-color;
+		border-color: @accent-color;
+		color: #fff;
+	}
+}
+
+.line {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #eeeeee;
+	display: block;
+	position: absolute;
+}
+
+.dark-banner {
+	background: @dark-bg-color;
+	& h3 {
+		text-align: center;
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 48px;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: 1.8px;
+
+		& span {
+			font-weight: 700;
+		}
+	}
+}
+
+.intro {
+	background: url(../img/bg/bg-intro.png) no-repeat top;
+	margin-top: 54px;
+	margin-bottom: 61px;
+
+	&__inner {
+		background-color: rgba(51, 51, 51, 0.75);
+	}
+	&__text {
+		text-align: center;
+		padding-top: 171px;
+		padding-bottom: 149px;
+	}
+	&__brand {
+		font-size: 48px;
+		text-transform: uppercase;
+		line-height: 54px;
+		letter-spacing: 2.4px;
+		color: #fff;
+		margin-bottom: 20px;
+		& span {
+			font-weight: 700;
+		}
+	}
+	&__slogan {
+		font-size: 30px;
+		line-height: 54px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		color: #fff;
+	}
+}
+
+.custom-checkbox {
+	display: none;
+}
+.custom-checkbox-label::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #e7e7e7;
+	margin-right: 15px;
+}
+.custom-checkbox-label {
+	font-family: @robo-font;
+	font-size: 15px;
+	line-height: 22px;
+	color: #8e8c8c;
+	position: relative;
+}
+.custom-checkbox-label::after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	transition: 0.1s;
+}
+.custom-checkbox:checked + .custom-checkbox-label::after {
+	background-color: @accent-color;
+}
+
+.col-3 {
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding: 0 10px;
+}
+.col-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 0 10px;
+}
+.col-9 {
+	flex: 0 0 75%;
+	max-width: 75%;
+	padding: 0 10px;
+}
+.col-12 {
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 0 10px;
+}

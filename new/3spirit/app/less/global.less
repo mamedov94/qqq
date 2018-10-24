@@ -1,0 +1,88 @@
+@import "colors";
+@import "fonts";
+@import "main";
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4 {
+	font-family: @open-font;
+	margin: 0;
+}
+
+span, a, p {
+	font-family: @open-font;
+}
+
+.container {
+	max-width: 1155px;
+}
+
+/* Line */
+
+.line {
+	width: 99px;
+	margin: 0 auto;
+	margin-top: 21px;
+	border-top: 5px solid @accent-color;
+	&-small {
+		width: 67px;
+		margin: 0 auto;
+		margin-top: 9px;
+		border-bottom: 5px solid @accent-color;
+	}
+}
+
+/* Title */
+
+.title {
+	font-size: 44px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: @white-title-color;
+	padding-top: 87px;
+
+	& span {
+		font-size: 44px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: @white-title-color;
+	}
+}
+
+.black-title {
+	font-size: 44px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: @black-title-color;
+	padding-top: 87px;
+
+	& span {
+		font-size: 44px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: @black-title-color;
+	}
+}
+
+/* Carousel */
+
+.carousel-indicators {
+	bottom: -125px;
+}
+
+.carousel-indicators li {
+	width: 9px;
+	height: 9px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.carousel-indicators .active {
+	background-color: @accent-color;
+}

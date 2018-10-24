@@ -1,0 +1,296 @@
+@import "colors";
+@import "fonts";
+@import "global";
+@import "media";
+@import "sizes";
+
+
+.personal-info {
+	padding: 0 40px;
+	&__photo {
+		display: flex;
+		justify-content: center;
+	}
+	& img {
+		background: #c5c5c5;
+		width: 197px;
+		height: 197px;
+		border-radius: 50%;
+		text-align: center;
+		overflow: hidden;
+	}
+	&__name {
+		padding-top: 43px;
+		& h1 {
+			font-size: 26px;
+			font-weight: 700;
+			color: @white-color;
+			margin-bottom: 10px;
+		}
+		& p {
+			font-size: @text-size;
+			letter-spacing: 0.49px;
+			color: @aside-text-color;
+			font-family: @robo-font;
+		}
+	}
+}
+
+.contacts {
+	position: relative;
+	padding-left: 40px;
+	&__item {
+		display: flex;
+		align-items: center;
+		& span {
+			font-family: @robo-font;
+			font-size: @text-size;
+			display: flex;
+			align-items: center;
+			color: @aside-text-color;
+			margin: 7px 0;
+		}
+		& a {
+			color: @aside-text-color;
+			&:hover {
+				text-decoration: none;
+				color: @aside-text-color + grey;
+			}
+		}
+		& svg {
+			margin-right: 15px;
+			fill: @white-color;
+		}
+	}
+	&::after {
+		.line;
+		right: 0;
+		top: 72px;
+	}
+}
+
+.about-me {
+	position: relative;
+	padding: 0 40px;
+	&__text {
+		& p {
+			font-family: @robo-font;
+			font-size: 14px;
+			text-indent: 20px;
+			line-height: 22px;
+			color: @aside-text-color;
+			margin-bottom: 10px;
+		}
+	}
+	&::after {
+		.line;
+		right: 0;
+		top: 72px;
+	}
+}
+
+.interests {
+	position: relative;
+	padding: 0 40px;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -6px;
+	}
+	&__item {
+		margin: 0 6px;
+	}
+	& svg {
+		fill: #d8d8d7;
+		width: 37px;
+		&:hover {
+			fill: @aside-text-color + grey;
+		}
+	}
+	&::after {
+		.line;
+		right: 0;
+		top: 72px;
+	}
+}
+
+
+/////////// Main ///////////
+
+
+.experience-item {
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__title {
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+		.title {
+			margin-right: 5px;
+		}
+	}
+	&__position {
+		margin-bottom: 5px;
+		.title {
+			font-size: 19px;
+		}
+		.text {
+			line-height: 20px;
+			margin: 10px auto 10px 25px;
+		}
+	}
+	.experience-skills {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 10px -6px 0 -6px;
+		&__skill {
+			margin: 0 6px;
+			& svg {
+				fill: @accent-color;
+				&:hover {
+					fill: @accent-color + 20;
+				}
+			}
+		}
+	}
+}
+
+
+// Skills section
+
+
+.skills-section__skills {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.skills-list {
+	.title {
+		margin-bottom: 15px;
+	}
+	&__item {
+		display: flex;
+		margin: 3px 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.skill-name {
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 600;
+		color: @italic-color / 1.2;
+		margin-right: auto;
+	}
+}
+
+
+// Extra skills section
+
+
+.extra-skills {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	.column {
+		max-width: 50%;
+		margin: 0 10px;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 5px 0;
+		& svg {
+			fill: @accent-color;
+			width: 50px;
+			max-height: 55px;
+		}
+		&:nth-last-child(-n+2) {
+			padding-bottom: 0;
+		}
+	}
+	&__text {
+		margin-left: @text-size;
+		width: 180px;
+	}
+}
+
+
+// Education section
+
+
+.education {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	&__name {
+		text-align: center;
+	}
+	&__proff p {
+		font-size: 19px;
+		font-weight: 600;
+		max-width: 250px;
+	}
+}
+
+
+// Portfolio section
+
+
+.portfolio-section__items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 -3px;
+}
+
+.col {
+	display: flex;
+	max-width: 185px;
+	max-height: 185px;
+	padding: 0 3px;
+}
+
+.portfolio-item {
+	display: flex;
+	margin: 8px 0;
+	position: relative;
+	transition: 0.2s;
+	& a {
+		display: flex;
+	}
+	& img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		background: #c5c5c5;
+	}
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0 0 10px 1px @aside-text-color;
+	}
+	&:hover .portfolio-item__text {
+		opacity: 0.97;
+		background: #1A2328;
+	}
+	&__text {
+		opacity: 0;
+		position: absolute;
+		top: 0; left: 0;
+		bottom: 0; right: 0;
+		transition: .2s;
+		& span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+			letter-spacing: 0.3px;
+			color: #fff;
+		}
+	}
+}

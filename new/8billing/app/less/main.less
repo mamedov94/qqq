@@ -1,0 +1,436 @@
+@import "global";
+
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 33px;
+	padding-bottom: 26px;
+}
+.toggler {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #313942;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+.shop {
+	font-family: @pt-font;
+	font-size: 24px;
+	margin-left: 20px;
+	line-height: 24px;
+}
+
+.toggler-btn {
+	display: block;
+	position: relative;
+	width: 19px;
+	height: 17px;
+	border: none;
+	cursor: pointer;
+	background: none;
+	outline: none;
+	& span {
+		.toggler;
+		position: absolute;
+		top: 7px;
+		left: 0;
+		&::before,
+		&::after {
+			.toggler;
+			position: absolute;
+			content: "";
+		}
+		&::before {
+			top: -7px;
+		}
+		&::after {
+			bottom: -7px;
+		}
+	}
+}
+
+.switcher {
+	display: flex;
+	align-items: center;
+	&__text {
+		font-family: @pt-font;
+		font-size: 18px;
+		margin-right: 31px;
+	}
+}
+
+.licenses {
+	padding-bottom: 27px;
+	&__used {
+		.title;
+		& span {
+			color: #f37575;
+		}
+	}
+	&__date {
+		font-size: 15px;
+	}
+}
+
+.buy-licenses {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 22px;
+	padding-bottom: 16px;
+	border-top: 1px solid rgba(146, 152, 155, 0.1);
+	border-bottom: 1px solid rgba(146, 152, 155, 0.1);
+	&__counter {
+		& input {
+			border: none;
+			text-align: center;
+			height: 36px;
+			outline: none;
+		}
+	}
+	&__more {
+		text-align: center;
+		padding-top: 23px;
+		padding-bottom: 18px;
+		width: 100%;
+		margin: 16px auto;
+		background: url(../img/bg/border-bg.png) no-repeat;
+		& p {
+			font-size: 18px;
+			color: #676e79;
+		}
+	}
+	&__price {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.multiply {
+	margin-right: 16px;
+	margin-left: 15px;
+	& svg {
+		width: 7px;
+		height: 7px;
+		fill: #313942;
+	}
+}
+.price {
+	font-size: 18px;
+	vertical-align: middle;
+	&::before {
+		content: "$";
+	}
+	&::after {
+		content: "/mo";
+	}
+}
+
+.extend {
+	padding-top: 30px;
+	padding-bottom: 120px;
+}
+
+.extend-range {
+	position: relative;
+	padding: 0 40px;
+	margin-top: 80px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #f5f5f5;
+		height: 5px;
+	}
+}
+
+.range-item {
+	position: relative;
+	background-color: #f5f5f5;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	&.active.range-item::before {
+		display: block;
+	}
+	&::before {
+		content: "";
+		border: 2px solid @green-color;
+		border-radius: 50%;
+		background: #fff url(../img/icons/checked.svg)  no-repeat center center;
+		background-size: 13px;
+		width: 30px;
+		height: 30px;
+		top: -5px;
+		left: -6px;
+		display: none;
+		position: absolute;
+	}
+	&__top-text {
+		width: 100px;
+		position: absolute;
+		top: -46px;
+		left: -20px;
+		& span {
+			font-size: 18px;
+		}
+	}
+	&__bottom-text {
+		width: 100px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		position: absolute;
+		bottom: -62px;
+		right: -37px;
+	}
+}
+
+.extend-price {
+	font-size: 15px;
+	color: #676e79;
+	&::before {
+		content: "$";
+	}
+}
+
+.discount {
+	font-size: 18px;
+	line-height: 32px;
+	color: @green-color !important;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	&::before {
+		content: "$";
+	}
+	&::after {
+		content: " off";
+	}
+}
+.disc {
+	.discount;
+	line-height: 15px; 
+}
+
+.range-cursor {
+	position: absolute;
+	content: "";
+	width: 106px;
+	height: 151px;
+	border: 2px solid @green-color;
+	left: 1px;
+	bottom: -81px;
+	z-index: 2;
+	transition: 0.3s;
+	transition-delay: 0.1s;
+}
+
+
+// Aside
+
+.additional-lic {
+	border-bottom: 1px dashed rgba(146, 152, 155, 0.2);
+}
+
+.licenses-quant {
+	&__item {
+		margin-bottom: 17px;
+		&:last-child {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.licenses-count {
+	width: 35px;
+	text-align: center;
+	background: none;
+	border: none;
+}
+
+.summary {
+	&__quant p {
+		margin-bottom: 12px;
+	}
+	&__calc {
+		padding-bottom: 20px;
+	}
+}
+
+.total {
+	margin-top: auto;
+	&__summ {
+		display: flex;
+		flex-direction: column;
+		.btn {
+			margin-top: 23px;
+		}
+	}
+}
+
+.total-summ {
+	font-family: @open-font;
+	font-size: 46px;
+	color: @accent-color !important;
+	border: none;
+	background: none;
+	&::before {
+		content: "$";
+	}
+}
+
+.add-coupon {
+	align-self: flex-start;
+	font-size: 13px;
+	color: #92989b !important;
+	cursor: pointer;
+	border-bottom: 1px dashed #92989b;
+}
+
+.coupon-input {
+	display: none;
+	border: 1px solid #92989b;
+	padding: 8px;
+	border-radius: 3px;
+	margin-top: 13px;
+	&::placeholder {
+		color: #92989b;
+	}
+	&.active {
+		display: block;
+	}
+}
+
+
+// Modal
+
+.modal-payment {
+	z-index: 100;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid rgba(146, 152, 155, 0.4);
+	background-color: #fff;
+	display: none;
+	&.active {
+		display: flex;
+	}
+}
+.modal-overlay {
+	background: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 0;left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	z-index: 60;
+	&.overlay {
+		visibility: visible;
+	}
+}
+
+.close-modal {
+	position: absolute;
+	top: 12px;
+	right: 18px;
+	cursor: pointer;
+}
+
+.card-details {
+	width: 400px;
+	padding: 28px 31px 30px 31px;
+	&__choice-card {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+	&__personal-info {
+		display: none;
+		& > input {
+			padding: 14px;
+			width: 100%;
+		}
+		input {
+			border: 1px solid rgba(0, 0, 0, 0.09);
+			border-radius: 3px;
+			margin-bottom: 12px;
+		}
+		input::placeholder {
+			font-family: @pt-font;
+			font-size: 18px;
+			color: #92989b;
+		}
+	}
+}
+.btn {
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+.old-card {
+	margin-bottom: 10px;
+}
+.old-card,
+.new-card {
+	display: flex;
+	align-items: center;
+}
+.save-card {
+	margin-left: auto;
+}
+
+.back-card-side {
+	display: flex;
+	position: relative;
+}
+
+.reccurement-pay {
+	margin: 31px 0;
+}
+
+.card-month {
+	margin-right: 12px;
+}
+.card-month,
+.card-year {
+	max-width: 50px;
+	text-align: center;
+	padding: 15px 10px;
+}
+
+.card-svv {
+	max-width: 75px;
+	margin-left: auto;
+	text-align: center;
+	padding: 10px;
+}
+.svv-icon {
+	position: absolute;
+	right: 15px;
+	top: 55px;
+}
+
+
+.payment-summ {
+	display: flex;
+	align-items: flex-end;
+	padding: 25px;
+	background-color: #f5f5f5;
+	width: 320px;
+	&__total {
+		margin-top: auto;
+		.total-summ {
+			font-size: 44px;
+		}
+	}
+}
+.payment-title span {
+	font-size: 18px;
+	line-height: 50px;
+	color: #2e3640;
+}

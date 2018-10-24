@@ -1,0 +1,53 @@
+aside.aside
+	div.aside-container
+		div.personal-info
+			div.personal-info__photo
+				img(src="img/photo.jpg", alt="photo")
+			div.personal-info__name
+				h1#my-name
+					| Элданиз Мамедов
+				p#my-position
+					| Junior Front-end Developer
+
+		div.contacts
+			div.contacts__title
+				h2.aside-title
+					| Контакты
+			div.contacts__item
+				include icons/contacts/email-icon
+				span#my-email
+					| mamedov094@bk.ru
+			div.contacts__item
+				include icons/contacts/phone-icon
+				span#my-phone-number
+					| +7 (963) 607-11-35
+			div.contacts__item
+				include icons/contacts/vk-icon
+				a#my-vk(href="https://vk.com/a3881593", target="_blank")
+					| https://vk.com/a3881593
+
+		div.about-me
+			div.about-me__title
+				h2.aside-title
+					| Обо мне
+			div.about-me__text
+				p
+					| Начал самостоятельное обучение с февраля 2018 года. Первым моим учителем стал сайт HTML Academy, он и дал хороший толчок, далее я продолжил обучаться посредством роликов с ютуба и различных сайтов, а после уже начал самостоятельно верстать. В каждый сайт я старался вносить что-то новое. Имеется небольшое портфолио.
+				p
+					| До веба я занимался 3D дизайном (дизайн помещений в «3Ds max» и «AutoCAD» + рендер (3 года назад)).
+				p
+					| Бросить незавершенную работу для меня является преступлением, поэтому часто засиживаюсь до 3-4 ночи, верстая какой-нибудь проект. Также очень люблю порядок, как в коде, так и в общем.
+
+		div.interests
+			div.interests__title
+				h2.aside-title
+					| Интересы
+			div.interests__list
+				div.interests__item
+					include icons/interests/gym-icon
+				div.interests__item
+					include icons/interests/repair-icon
+				div.interests__item
+					include icons/interests/car-icon
+				div.interests__item
+					include icons/interests/design-icon

@@ -1,0 +1,44 @@
+div.modal-payment
+	span.close-modal
+		include ../_partials/icons/close-icon
+	div.card-details
+		div.card-details__title
+			h2.title Credit Card Details:
+		div.card-details__choice-card
+			div.old-card
+				input.custom-rad#own-card(type="radio" name="card" checked)
+				label.custom-rad-label(for="own-card")
+				span MC ****9668
+			div.new-card
+				input.custom-rad#new-card(type="radio" name="card")
+				label.custom-rad-label(for="new-card")
+				span New card
+				div.save-card
+					input.custom-check#save(type="checkbox" name="save-card")
+					label.custom-check-label(for="save") Save
+		form.card-details__personal-info
+			input.card-number(type="text" maxlength="23" placeholder="Number" autocomplete="off")
+			input.card-name(type="text" placeholder="Name on card" autocomplete="off")
+			div.back-card-side
+				input.card-month(type="text" maxlength="2" placeholder="MM" autocomplete="off")
+				input.card-year(type="text" maxlength="2" placeholder="YY" autocomplete="off")
+				input.card-svv(type="text" maxlength="3" placeholder="CVV" autocomplete="off")
+				span.svv-icon
+					include ../_partials/icons/svv-icon
+		div.reccurement-pay
+			input.custom-check#reccure(type="checkbox" name="reccure")
+			label.custom-check-label(for="reccure") Do a reccurement payment
+		button.btn Checkout
+		button.white-btn or 
+			span Pay with 
+			img(src="img/icons/paypal.svg", alt="paypal")
+
+	div.payment-summ
+		div.payment-summ__total
+			div.payment-title
+				span Total:
+			div.payment-total-summ
+				span.total-summ 240
+			div.payment-discount
+				span.discount 30
+div.modal-overlay

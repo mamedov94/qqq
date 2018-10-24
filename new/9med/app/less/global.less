@@ -1,0 +1,159 @@
+@import "colors";
+@import "fonts";
+@import "main";
+@import "media";
+
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: @popp-font;
+	background-color: @bg-color;
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+span, a, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1626px;
+	margin: 0 auto;
+}
+
+.mb-55 { margin-bottom: 55px; }
+.mb-40 { margin-bottom: 40px; }
+.mt-40 { margin-top: 40px; }
+
+.box {
+	box-shadow: 0 5px 12px rgba(40, 70, 111, 0.1);
+	background-color: #fff;
+}
+
+.block {
+	margin-bottom: 60px;
+}
+
+.title {
+	font-size: 36px;
+	color: #000;
+}
+
+.aside-title {
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 1.54px;
+	color: #000;
+}
+
+.footer-title {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 34.4px;
+	letter-spacing: -0.64px;
+	text-transform: capitalize;
+	color: #fff;
+}
+
+.post-title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.subtitle {
+	font-size: 18px;
+	font-weight: 500;
+	color: @span-color;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: 0.54px;
+	color: @text-color;
+}
+
+.view-all {
+	font-size: 20px;
+	font-weight: 600;
+	color: #ef261e;
+	text-decoration: none;
+}
+
+.news-comments {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	& img {
+		margin-right: 6px;
+	}
+}
+
+.stars {
+	.star {
+		margin-right: 3px;
+	}
+}
+
+.title-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #f1f1f1;
+	background-color: #ffffff;
+	position: relative;
+	padding: 17px 29px 17px 24px;
+	margin-bottom: 10px;
+	&::before {
+		content: "";
+		height: 100%;
+		width: 7px;
+		background-color: @accent-color;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+.descript {
+	font-family: @alegr-font;
+	font-size: 25px;
+	font-style: italic;
+	letter-spacing: -0.27px;
+	color: @span-color;
+}
+
+.comments {
+	.descript;
+	display: flex;
+	align-items: center;
+	& img {
+		margin-right: 11px;
+	}
+}
+
+.date {
+	.descript;
+}

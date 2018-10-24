@@ -1,0 +1,170 @@
+@import "colors";
+@import "fonts";
+@import "sizes";
+@import "media";
+@import "main";
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: @mr-font;
+	background: linear-gradient(to right, rgba(173,173,173,1) 1%,rgba(182,182,182,1) 48%,rgba(173,173,173,1) 100%);
+	margin: 50px 0 50px 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+span, a, p {
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+// Wrapper
+
+.wrapper {
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.aside-container {
+	padding: 55px 0;
+}
+
+.main-container {
+	padding: 55px 97px 55px 98px;
+}
+
+.page {
+	display: flex;
+	flex: 0 0 100%;
+	max-width: 100%;
+	box-shadow: 10px 8px 23px 12px #7f7f7f;
+}
+
+// Aside
+
+.aside {
+	max-width: 33%;
+	background: linear-gradient(to right, rgba(40,52,58,1) 0%,rgba(47,54,58,1) 37%,rgba(40,52,59,1) 100%);
+}
+
+// Main
+
+.main {
+	max-width: 67%;
+	background: linear-gradient(to right, rgba(243,242,238,1) 0%,rgba(244,243,239,1) 100%);
+}
+
+// Line
+
+.line {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	background: @line-color;
+}
+
+.progress {
+	display: flex;
+	align-items: center;
+	.circle {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background: #dcdbd9;
+		margin-left: 5px;
+	}
+	.active {
+		background: @accent-color;
+	}
+}
+
+.ml-auto { margin-left: auto; }
+.mr-auto { margin-right: auto; }
+.pd-b50 { padding-bottom: 50px; }
+
+// Title box
+
+.title-box {
+	display: flex;
+	align-items: center;
+	background: #dcdbd9;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 50px;
+	box-shadow: 0 0 3px 0px #a0a0a0;
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		background: @accent-color;
+		box-shadow: 0 0 5px 0px #a0a0a0;
+		& svg {
+			fill: @white-color;
+		}
+	}
+	&__title h3 {
+		font-size: 21px;
+		text-transform: uppercase;
+		color: @main-title-color;
+		margin-left: 30px;
+		font-weight: 700;
+	}
+}
+
+// Title
+
+.title {
+	font-size: @md-title-size;
+	font-weight: 600;
+	color: @title-color;
+	letter-spacing: -0.2px;
+}
+
+// Aside title
+
+.aside-title {
+	font-size: @md-title-size;
+	text-transform: uppercase;
+	color: @white-color;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+// Text
+
+.text {
+	font-family: @mr-font;
+	font-size: @text-size;
+	letter-spacing: 0.2px;
+	color: @accent-color;
+}
+
+// Date
+
+.date {
+	font-size: 16px;
+	font-style: italic;
+	color: @italic-color;
+}
